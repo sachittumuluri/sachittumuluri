@@ -1,0 +1,4 @@
+- 👋 Hi, I’m @sachittumuluri
+- 👀 I’m interested in machine learning, economics, and chemistry. 
+- 📫 How to reach me: Gmail: sachi11umuluri@gmail.com
+- 😄 Pronouns: he/him
