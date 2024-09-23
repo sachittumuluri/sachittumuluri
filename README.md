@@ -2,4 +2,3 @@
 - 👀 I’m interested in machine learning, economics, and chemistry. 
 - 📫 How to reach me: sachi11umuluri@gmail.com
 - 😄 Pronouns: he/him
-- 🤩 Fun Fact: I love competitive programming competitions such as USACO & Meta Hacker Cup
