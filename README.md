@@ -1,18 +1,17 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/sachittumuluri/sachittumuluri/main/assets/banner.svg?v=minimal" alt="Sachit Tumuluri — markets, heartbeats, music: it's all signals" width="100%"/>
+<img src="https://raw.githubusercontent.com/sachittumuluri/sachittumuluri/main/assets/banner.svg?v=analyzer" alt="Sachit Tumuluri — signal analyzer: markets, cardiac, audio" width="100%"/>
 </div>
 
 I build software that listens — to markets, to heartbeats, to music.
 
-CS + data science + statistics at UMass Amherst. Senior analyst at MAIF, engineering lead on SmartChart, nights on Vega Labs. IEEE-published for catching arrhythmias with topology. USACO Platinum.
+CS + data science + statistics at UMass Amherst. Senior analyst at MAIF, engineering lead on SmartChart, nights on Vega Labs. Published in IEEE Proceedings: *Applications of Algebraic Topology to the Detection of Ventricular Tachycardia*. USACO Platinum.
 
 | | |
 |---|---|
-| [strattrust](https://github.com/sachittumuluri/strattrust) | validation layer for trading strategies — if it can't survive a re-run, it wasn't alpha |
-| [maif-backtester](https://github.com/sachittumuluri/maif-backtester) | same tape, side B — the MAIF framework strattrust grew out of |
-| [VentriCode](https://github.com/sachittumuluri/VentriCode) | arrhythmia detection with persistent homology — donut math, peer-reviewed |
+| [vega-labs / maif-backtester](https://github.com/vega-labs-org/maif-backtester) | the quant stack — event-driven sim, OCO brackets, Monte Carlo stress tests, GAN market regimes |
+| [Applications of Algebraic Topology to the Detection of Ventricular Tachycardia](https://github.com/sachittumuluri/Applications-of-Algebraic-Topology-to-Ventricular-Tachycardia) | IEEE Proceedings 2025 — Takens embeddings + persistent homology across 75 patients · code: [VentriCode](https://github.com/sachittumuluri/VentriCode) |
 | [vega-rules](https://github.com/sachittumuluri/vega-rules) | the deterministic half of a sales agent — the half that has to be right |
-| [cody-cartridge](https://github.com/sachittumuluri/cody-cartridge) | a Mac music player cosplaying as noir hardware |
-| [USACOSolves](https://github.com/sachittumuluri/USACOSolves) | the Platinum paper trail — Bessie has seen things |
+| [cody-cartridge](https://github.com/sachittumuluri/cody-cartridge) | a personal local music hoster — aesthetics as a first-class feature |
+| [USACOSolves](https://github.com/sachittumuluri/USACOSolves) | Platinum-division solutions in C++17 |
 
 [sstumuluri@umass.edu](mailto:sstumuluri@umass.edu) · [linkedin](https://www.linkedin.com/in/sachit-tumuluri) · [sachittumuluri.github.io](https://sachittumuluri.github.io)

@@ -1,59 +1,92 @@
-<svg width="960" height="200" viewBox="0 0 960 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sachit Tumuluri — markets, heartbeats, music: it's all signals">
+<svg width="960" height="230" viewBox="0 0 960 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sachit Tumuluri — signal analyzer: markets, cardiac, audio">
   <defs>
     <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ffd27d"/>
       <stop offset="0.5" stop-color="#ff9f45"/>
       <stop offset="1" stop-color="#ff5e6c"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="-0.6 0; 0.6 0; -0.6 0" dur="10s" repeatCount="indefinite"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.5 0; 0.5 0; -0.5 0" dur="11s" repeatCount="indefinite"/>
     </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0 H0 V24" stroke="#ffb454" stroke-opacity="0.05" stroke-width="1" fill="none"/>
+    </pattern>
+    <clipPath id="tw">
+      <rect x="196" y="66" width="600" height="62">
+        <animate attributeName="width" calcMode="discrete" fill="freeze" begin="0.4s" dur="1.7s"
+          values="0;31.6;63.2;94.8;126.4;158;189.6;221.2;252.8;284.4;316;347.6;379.2;410.8;442.4;474;505.6;600"/>
+      </rect>
+    </clipPath>
+    <clipPath id="tw2">
+      <rect x="196" y="132" width="640" height="26">
+        <animate attributeName="width" fill="freeze" begin="2.4s" dur="0.9s" values="0;640"/>
+      </rect>
+    </clipPath>
     <style>
-      .name {
-        font: 700 52px ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
-        letter-spacing: 6px;
-        fill: url(#ink);
-        stroke: url(#ink);
-        stroke-width: 1;
-        fill-opacity: 0;
-        stroke-dasharray: 1400;
-        stroke-dashoffset: 1400;
-        animation: draw 2.4s ease-out forwards, fillin 1.2s ease 1.7s forwards;
-      }
-      @keyframes draw   { to { stroke-dashoffset: 0; } }
-      @keyframes fillin { to { fill-opacity: 1; } }
-      .rule {
-        stroke: #3a2f22; stroke-width: 1.5; stroke-linecap: round;
-        stroke-dasharray: 520; stroke-dashoffset: 520;
-        animation: draw 1.4s ease 2s forwards;
-      }
-      .sub {
-        font: 500 15px ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
-        letter-spacing: 3px; fill: #8f8371; opacity: 0;
-        animation: fade 1s ease 2.4s forwards;
-      }
-      @keyframes fade { to { opacity: 1; } }
-      .ekg {
-        stroke: #ffb454; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round;
-        stroke-dasharray: 80 1400;
-        animation: run 7s linear infinite;
-      }
-      @keyframes run { from { stroke-dashoffset: 1480; } to { stroke-dashoffset: 80; } }
+      text { font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace; }
+      .hdr  { font-size: 11px; letter-spacing: 2px; fill: #6a5f4f; }
+      .name { font-size: 46px; font-weight: 700; letter-spacing: 4px; fill: url(#ink); }
+      .sub  { font-size: 14px; letter-spacing: 2px; fill: #8f8371; }
+      .chl  { font-size: 10px; letter-spacing: 2px; fill: #5d5344; }
+      .cursor { fill: #ffb454; animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .trace { stroke: #2c251b; stroke-width: 1.4; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+      .hot { stroke: #ffb454; stroke-width: 1.7; fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-dasharray: 56 900; }
+      .h1 { animation: run1 5.5s linear infinite; }
+      .h2 { animation: run1 6.5s linear infinite; }
+      .h3 { animation: run1 4.5s linear infinite; }
+      @keyframes run1 { from { stroke-dashoffset: 956; } to { stroke-dashoffset: 56; } }
+      .pd-dot { fill: #ffb454; animation: pulse 3.2s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity: 0.25; } 50% { opacity: 1; } }
       @media (prefers-reduced-motion: reduce) {
-        .name { animation: none; fill-opacity: 1; stroke-dashoffset: 0; }
-        .rule { animation: none; stroke-dashoffset: 0; }
-        .sub  { animation: none; opacity: 1; }
-        .ekg  { animation: none; }
+        .cursor, .hot, .pd-dot { animation: none; }
+        .hot { stroke-dasharray: none; opacity: 0.35; }
       }
     </style>
   </defs>
 
-  <rect width="960" height="200" rx="16" fill="#0b0b0f"/>
-  <rect x="0.5" y="0.5" width="959" height="199" rx="15.5" fill="none" stroke="#26221c"/>
+  <rect width="960" height="230" rx="14" fill="#0a0a0e"/>
+  <rect width="960" height="230" rx="14" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="959" height="229" rx="13.5" fill="none" stroke="#26221c"/>
 
-  <text x="480" y="96" text-anchor="middle" class="name">SACHIT TUMULURI</text>
-  <line class="rule" x1="220" y1="118" x2="740" y2="118"/>
-  <text x="480" y="150" text-anchor="middle" class="sub">markets · heartbeats · music — it's all signals</text>
+  <!-- header -->
+  <text x="28" y="30" class="hdr">SIG/ANALYZER rev5.1 :: operator=tumuluri</text>
+  <text x="932" y="30" text-anchor="end" class="hdr">TRIG ▲ 60bpm · fs=44.1kHz</text>
 
-  <path d="M0 178 H310 l10 0 7 -13 9 27 10 -41 9 34 7 -7 h14 H560 l10 0 7 -11 9 24 10 -37 9 30 7 -6 h14 H960"
-        stroke="#2c251b" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
-  <path class="ekg" d="M0 178 H310 l10 0 7 -13 9 27 10 -41 9 34 7 -7 h14 H560 l10 0 7 -11 9 24 10 -37 9 30 7 -6 h14 H960"/>
+  <!-- persistence diagram, H1 -->
+  <g>
+    <rect x="872" y="44" width="52" height="52" fill="none" stroke="#2c251b"/>
+    <line x1="872" y1="96" x2="924" y2="44" stroke="#2c251b" stroke-width="1"/>
+    <circle class="pd-dot" cx="884" cy="62" r="2" style="animation-delay:0s"/>
+    <circle class="pd-dot" cx="892" cy="52" r="2" style="animation-delay:0.8s"/>
+    <circle class="pd-dot" cx="902" cy="66" r="2" style="animation-delay:1.6s"/>
+    <circle class="pd-dot" cx="912" cy="58" r="2" style="animation-delay:2.4s"/>
+    <text x="898" y="110" text-anchor="middle" class="chl">PD(H₁)</text>
+  </g>
+
+  <!-- typed name -->
+  <g clip-path="url(#tw)">
+    <text x="200" y="112" class="name">&gt; SACHIT TUMULURI</text>
+  </g>
+  <rect class="cursor" x="200" y="74" width="24" height="44">
+    <animate attributeName="x" calcMode="discrete" fill="freeze" begin="0.4s" dur="1.7s"
+      values="200;231.6;263.2;294.8;326.4;358;389.6;421.2;452.8;484.4;516;547.6;579.2;610.8;642.4;674;705.6;744"/>
+  </rect>
+
+  <!-- typed subline -->
+  <g clip-path="url(#tw2)">
+    <text x="200" y="150" class="sub">$ cat /dev/signals :: markets · heartbeats · music</text>
+  </g>
+
+  <!-- channels -->
+  <text x="40" y="181" class="chl">CH1 :: MARKETS [ES,VX]</text>
+  <text x="372" y="181" class="chl">CH2 :: CARDIAC [ECG-II]</text>
+  <text x="700" y="181" class="chl">CH3 :: AUDIO [PCM]</text>
+
+  <path class="trace" d="M40 205 L52 200 L64 208 L76 197 L88 203 L100 190 L112 199 L124 193 L136 206 L148 198 L160 210 L172 195 L184 200 L196 188 L208 196 L220 191 L232 203 L244 197 L256 205 L268 194 L280 199 L292 192 L304 196 L316 190 L328 194"/>
+  <path class="hot h1" d="M40 205 L52 200 L64 208 L76 197 L88 203 L100 190 L112 199 L124 193 L136 206 L148 198 L160 210 L172 195 L184 200 L196 188 L208 196 L220 191 L232 203 L244 197 L256 205 L268 194 L280 199 L292 192 L304 196 L316 190 L328 194"/>
+
+  <path class="trace" d="M372 204 H414 l5 -10 7 21 8 -32 7 26 5 -5 h14 H504 l5 -10 7 21 8 -32 7 26 5 -5 h14 H596 l5 -10 7 21 8 -32 7 26 5 -5 h13"/>
+  <path class="hot h2" d="M372 204 H414 l5 -10 7 21 8 -32 7 26 5 -5 h14 H504 l5 -10 7 21 8 -32 7 26 5 -5 h14 H596 l5 -10 7 21 8 -32 7 26 5 -5 h13"/>
+
+  <path class="trace" d="M700 204 L706 197 L712 210 L718 194 L724 212 L730 199 L736 208 L742 193 L748 211 L754 200 L760 206 L766 195 L772 209 L778 198 L784 212 L790 196 L796 205 L802 192 L808 210 L814 199 L820 207 L826 194 L832 209 L838 200 L844 205 L850 196 L856 211 L862 198 L868 206 L874 195 L880 208 L886 199 L892 204 L898 194 L904 209 L910 200 L916 205"/>
+  <path class="hot h3" d="M700 204 L706 197 L712 210 L718 194 L724 212 L730 199 L736 208 L742 193 L748 211 L754 200 L760 206 L766 195 L772 209 L778 198 L784 212 L790 196 L796 205 L802 192 L808 210 L814 199 L820 207 L826 194 L832 209 L838 200 L844 205 L850 196 L856 211 L862 198 L868 206 L874 195 L880 208 L886 199 L892 204 L898 194 L904 209 L910 200 L916 205"/>
 </svg>
