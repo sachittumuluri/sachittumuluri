@@ -1,14 +1,14 @@
 <svg width="960" height="260" viewBox="0 0 960 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sachit Tumuluri — machine learning, quantitative research, full-stack builds">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="960" y2="260" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#070b18"/>
-      <stop offset="0.55" stop-color="#0c1226"/>
-      <stop offset="1" stop-color="#101a36"/>
+      <stop offset="0" stop-color="#0a0a10"/>
+      <stop offset="0.55" stop-color="#12100d"/>
+      <stop offset="1" stop-color="#1a1410"/>
     </linearGradient>
     <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8b7bff"/>
-      <stop offset="0.5" stop-color="#4dd8ff"/>
-      <stop offset="1" stop-color="#ff5ea8"/>
+      <stop offset="0" stop-color="#ffd27d"/>
+      <stop offset="0.5" stop-color="#ff9f45"/>
+      <stop offset="1" stop-color="#ff5e6c"/>
       <animateTransform attributeName="gradientTransform" type="translate" values="-0.6 0; 0.6 0; -0.6 0" dur="9s" repeatCount="indefinite"/>
     </linearGradient>
     <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
@@ -40,7 +40,7 @@
         stroke-dasharray: 560; stroke-dashoffset: 560;
         animation: draw 1.6s ease 2.2s forwards;
       }
-      .role { font: 600 16px "SFMono-Regular", "Cascadia Code", Consolas, Menlo, monospace; letter-spacing: 2.5px; fill: #9fb2e8; opacity: 0; }
+      .role { font: 600 16px "SFMono-Regular", "Cascadia Code", Consolas, Menlo, monospace; letter-spacing: 2.5px; fill: #c9b18f; opacity: 0; }
       .r1 { animation: cycle 12s linear 3.0s infinite; }
       .r2 { animation: cycle 12s linear 7.0s infinite; }
       .r3 { animation: cycle 12s linear 11.0s infinite; }
@@ -51,12 +51,12 @@
         34% { opacity: 0; transform: translateY(-6px); }
         100% { opacity: 0; }
       }
-      .cursor { fill: #4dd8ff; animation: blink 1.1s steps(1) infinite; }
+      .cursor { fill: #ffb454; animation: blink 1.1s steps(1) infinite; }
       @keyframes blink { 50% { opacity: 0; } }
-      .star { fill: #cfe2ff; animation: twinkle 4s ease-in-out infinite; }
+      .star { fill: #ffe9c4; animation: twinkle 4s ease-in-out infinite; }
       @keyframes twinkle { 0%,100% { opacity: 0.15; } 50% { opacity: 0.75; } }
       .ekg-hot {
-        stroke: #4dd8ff; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round;
+        stroke: #ffb454; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round;
         stroke-dasharray: 90 1400;
         animation: run 6s linear infinite;
         filter: url(#glow);
@@ -82,13 +82,13 @@
   </defs>
 
   <rect width="960" height="260" rx="18" fill="url(#bg)"/>
-  <rect width="960" height="260" rx="18" fill="none" stroke="#2a3a66" stroke-opacity="0.6"/>
+  <rect width="960" height="260" rx="18" fill="none" stroke="#3a2f22" stroke-opacity="0.6"/>
 
   <!-- terminal chrome -->
   <circle cx="30" cy="28" r="5.5" fill="#ff5f57"/>
   <circle cx="50" cy="28" r="5.5" fill="#febc2e"/>
   <circle cx="70" cy="28" r="5.5" fill="#28c840"/>
-  <text x="480" y="33" text-anchor="middle" class="mono" fill="#5d6f9e">~/sachit — signal deck</text>
+  <text x="480" y="33" text-anchor="middle" class="mono" fill="#8a7a63">~/sachit — signal deck · side A</text>
 
   <!-- stars -->
   <circle class="star" cx="120" cy="70" r="1.6" style="animation-delay:0s"/>
@@ -115,15 +115,15 @@
 
   <!-- rotating roles -->
   <g>
-    <text x="470" y="192" text-anchor="middle" class="role r1">machine learning × quantitative research</text>
-    <text x="470" y="192" text-anchor="middle" class="role r2">building ai agents that earn their keep</text>
-    <text x="470" y="192" text-anchor="middle" class="role r3">software with a pulse — from ecg to audio</text>
+    <text x="470" y="192" text-anchor="middle" class="role r1">markets · heartbeats · music — it&#39;s all signals</text>
+    <text x="470" y="192" text-anchor="middle" class="role r2">rules in code, judgment in the model</text>
+    <text x="470" y="192" text-anchor="middle" class="role r3">local-first, offline-proud, slightly noir</text>
   </g>
   <rect class="cursor" x="792" y="180" width="9" height="16" rx="1.5"/>
 
   <!-- ekg trace -->
   <path d="M0 232 H240 l14 0 8 -16 10 34 12 -52 10 44 8 -10 h18 H430 l12 0 8 -14 10 30 12 -46 10 38 8 -8 h16 H700 l10 0 8 -12 10 26 12 -40 10 34 8 -8 h14 H960"
-        stroke="#22335f" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+        stroke="#3a2c1c" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
   <path class="ekg-hot" d="M0 232 H240 l14 0 8 -16 10 34 12 -52 10 44 8 -10 h18 H430 l12 0 8 -14 10 30 12 -46 10 38 8 -8 h16 H700 l10 0 8 -12 10 26 12 -40 10 34 8 -8 h14 H960"/>
 
   <!-- sheen sweep -->
