@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/sachittumuluri/sachittumuluri/main/assets/banner.svg?v=analyzer2" alt="Sachit Tumuluri — signal analyzer: markets, cardiac, audio" width="100%"/>
+<img src="https://raw.githubusercontent.com/sachittumuluri/sachittumuluri/main/assets/banner.svg?v=grunge" alt="Sachit Tumuluri — signal analyzer: markets, cardiac, audio" width="100%"/>
 </div>
 
 I build software that listens — to markets, to heartbeats, to music.
