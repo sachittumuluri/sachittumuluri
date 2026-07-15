@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/sachittumuluri/sachittumuluri/main/assets/banner.svg?v=grunge" alt="Sachit Tumuluri — signal analyzer: markets, cardiac, audio" width="100%"/>
 </div>
 
-CS + data science + statistics at UMass Amherst. Senior analyst at MAIF, engineering lead on SmartChart, nights on Vega Labs. Published in IEEE Proceedings: *Applications of Algebraic Topology to the Detection of Ventricular Tachycardia*. USACO Platinum.
+CS + data science + statistics at UMass Amherst. Senior analyst at MAIF, Founder of SmartChart, Founder of Vega Labs. Published in IEEE Proceedings: *Applications of Algebraic Topology to the Detection of Ventricular Tachycardia*. USACO Platinum.
 
 | | |
 |---|---|
