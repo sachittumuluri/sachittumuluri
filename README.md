@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/sachittumuluri/sachittumuluri/main/assets/banner.svg" alt="Sachit Tumuluri — markets, heartbeats, music: it's all signals" width="100%"/>
+<img src="https://raw.githubusercontent.com/sachittumuluri/sachittumuluri/main/assets/banner.svg?v=phosphor" alt="Sachit Tumuluri — markets, heartbeats, music: it's all signals" width="100%"/>
 </div>
 
 ### hey, I'm Sachit
