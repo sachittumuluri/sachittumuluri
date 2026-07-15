@@ -9,24 +9,20 @@
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M24 0 H0 V24" stroke="#ffb454" stroke-opacity="0.05" stroke-width="1" fill="none"/>
     </pattern>
-    <clipPath id="tw">
-      <rect x="196" y="66" width="600" height="62">
-        <animate attributeName="width" calcMode="discrete" fill="freeze" begin="0.4s" dur="1.7s"
-          values="0;31.6;63.2;94.8;126.4;158;189.6;221.2;252.8;284.4;316;347.6;379.2;410.8;442.4;474;505.6;600"/>
-      </rect>
-    </clipPath>
-    <clipPath id="tw2">
-      <rect x="196" y="132" width="640" height="26">
-        <animate attributeName="width" fill="freeze" begin="2.4s" dur="0.9s" values="0;640"/>
-      </rect>
-    </clipPath>
     <style>
+      .tw { clip-path: inset(0 100% 0 0); animation: type 1.7s steps(17, end) 0.4s forwards; }
+      .tw2 { clip-path: inset(0 100% 0 0); animation: type 0.9s ease 2.4s forwards; }
+      @keyframes type { to { clip-path: inset(0 0 0 0); } }
       text { font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace; }
       .hdr  { font-size: 11px; letter-spacing: 2px; fill: #6a5f4f; }
       .name { font-size: 46px; font-weight: 700; letter-spacing: 4px; fill: url(#ink); }
       .sub  { font-size: 14px; letter-spacing: 2px; fill: #8f8371; }
       .chl  { font-size: 10px; letter-spacing: 2px; fill: #5d5344; }
-      .cursor { fill: #ffb454; animation: blink 1s steps(1) infinite; }
+      .cursor {
+        fill: #ffb454;
+        animation: curmove 1.7s steps(17, end) 0.4s forwards, blink 1s steps(1) 2.2s infinite;
+      }
+      @keyframes curmove { from { transform: translateX(0); } to { transform: translateX(544px); } }
       @keyframes blink { 50% { opacity: 0; } }
       .trace { stroke: #2c251b; stroke-width: 1.4; fill: none; stroke-linejoin: round; stroke-linecap: round; }
       .hot { stroke: #ffb454; stroke-width: 1.7; fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-dasharray: 56 900; }
@@ -37,7 +33,9 @@
       .pd-dot { fill: #ffb454; animation: pulse 3.2s ease-in-out infinite; }
       @keyframes pulse { 0%,100% { opacity: 0.25; } 50% { opacity: 1; } }
       @media (prefers-reduced-motion: reduce) {
-        .cursor, .hot, .pd-dot { animation: none; }
+        .cursor, .hot, .pd-dot, .tw, .tw2 { animation: none; }
+        .tw, .tw2 { clip-path: none; }
+        .cursor { transform: translateX(544px); }
         .hot { stroke-dasharray: none; opacity: 0.35; }
       }
     </style>
@@ -63,16 +61,13 @@
   </g>
 
   <!-- typed name -->
-  <g clip-path="url(#tw)">
+  <g class="tw">
     <text x="200" y="112" class="name">&gt; SACHIT TUMULURI</text>
   </g>
-  <rect class="cursor" x="200" y="74" width="24" height="44">
-    <animate attributeName="x" calcMode="discrete" fill="freeze" begin="0.4s" dur="1.7s"
-      values="200;231.6;263.2;294.8;326.4;358;389.6;421.2;452.8;484.4;516;547.6;579.2;610.8;642.4;674;705.6;744"/>
-  </rect>
+  <rect class="cursor" x="204" y="74" width="24" height="44"/>
 
   <!-- typed subline -->
-  <g clip-path="url(#tw2)">
+  <g class="tw2">
     <text x="200" y="150" class="sub">$ cat /dev/signals :: markets · heartbeats · music</text>
   </g>
 
