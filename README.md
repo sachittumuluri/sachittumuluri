@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/sachittumuluri/sachittumuluri/main/assets/banner.svg?v=repl3" alt="Python session: import sachit — markets, heartbeats, music" width="100%"/>
 </div>
 
-CS + data science + statistics at UMass Amherst. Senior analyst at MAIF, Founder of SmartChart, Founder of Vega Labs. *Applications of Algebraic Topology to the Detection of Ventricular Tachycardia*. USACO Platinum.
+CS + data science + statistics at UMass Amherst. Senior analyst at MAIF, Founder of SmartChart, Founder of Vega Labs. Authored *Applications of Algebraic Topology to the Detection of Ventricular Tachycardia*. USACO Platinum.
 
 | | |
 |---|---|
